@@ -54,4 +54,48 @@ body{
     font-family: 'OpenSance-Regular';
     font-size: 1.1vmax;
     line-height: 2.13vmax;
+    background-color: #e6f3f3;
+    color: #2c2c2c;
+    height: 100%;
+}
+html {
+    height: 100%;
+}
+
+.wrap {
+    width: 64.4vw;
+    margin:  0 auto;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4vh;
+}
+
+header .wrap {
+    height: inherit;
+}
+
+.color_main {
+    background-color: #565555;
+}
+
+nav a {
+    text-decoration: none;
+}
+nav li {
+    list-style: none;
+}
+#main_nav a {
+    color:#fff;
+    text-transform: uppercase;
+    margin-right: 6.39vmax;  
+}
+
+#main_nav a:hover {
+    text-decoration: underline;
 }
