@@ -6,7 +6,7 @@ a{
     text-decoration: none;
 }
 li{
-list-style: none;  
+    list-style: none;  
 }
 
 
@@ -16,25 +16,26 @@ list-style: none;
 }
 header{
     width: 100%;
-    background:#4f4e4e;
+    background:#000;
     display: flex;
 }
-.header__logo{ 
-    color: white;
+.header__logo{
+    text-transform: uppercase;
+    color: #fff;
     font-weight: 800;
     font-size: 24px;
     cursor: pointer;
-    margin-top: 14px;
-    margin-left: 24px;
+    margin-top: 56px;
+    margin-left: 12%;
  }
  nav{
-    margin-top: 14px;
-    margin-left: 86px;
+    margin-top: 56px;
+    margin-left: 29%;
  }
  .topnav a{
-    color: white;
+    color: #fff;
     text-align: center;
-    padding: 15px 16px;
+    padding: 12px 16px;
     font-size: 14px;
     font-weight: bold;
 
@@ -47,7 +48,21 @@ header{
     display:  none;
  }
 
-@media screen and (max-width: 580px){
+
+@media screen and (max-width: 1200px) {
+    nav{
+        margin-left: 20%;
+    }
+
+}
+@media screen and (max-width: 1105px) {
+    nav{
+        margin-left: 10%;
+    }
+}
+
+
+@media screen and (max-width: 1010px) {
     .topnav a{
         display: none;
     }
@@ -55,7 +70,7 @@ header{
         float: right;
         margin-top: -17px;
         display: block;
-        color: white;
+        color: #fff;
         font-size: 25px;
     }
     nav{
@@ -66,6 +81,19 @@ header{
         top: 50px;
         left: -200px;
     }
+    header .topnav.responsive{
+        height: 340px;
+    }
+    .topnav.responsive a.icon{
+        position: absolute;
+        top: -50px;
+        right: -200px;
+    }
+    .topnav.responsive a{
+        float: none;
+        display: block;
+        text-align: left; 
+    }   
 }
 
 
